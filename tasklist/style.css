@@ -1,0 +1,51 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #ebe8ec;
+  text-align: center;
+}
+
+#contenedor {
+  margin: 20px auto;
+  width: 300px;
+}
+
+#nueva-tarea {
+  width: 200px;
+  padding: 10px;
+  border: solid black 2px;
+}
+
+#agregar {
+  padding: 10px 20px;
+  border: solid black 2px;
+}
+
+#lista-tareas {
+  column-count: 3; /* Número de columnas que deseas */
+  column-gap: 20px; /* Espacio entre columnas */
+  grid-gap: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+
+#lista-tareas li {
+  background-color: #fff;
+  padding: 10px;
+  position: relative;
+  break-inside: avoid;
+  margin-bottom: 10px;
+  border: solid rgb(62, 60, 60) 1px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+#lista-tareas li:hover {
+  background-color: #d1c3c3;
+  transform: scale(1.05);
+}
+.borrar {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  color: rgb(129, 26, 26);
+}
+/* añadir mas espacio para que no se desborde la tarea si es larga o que la tarea tenga opcion de titulo y despues una descripcion. luego añadir que las tareas al clicarla el texto sea tachado como completo y que las tareas desaparezca
